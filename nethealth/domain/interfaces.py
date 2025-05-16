@@ -90,3 +90,11 @@ class HistoryManager(Protocol):
     def get_latest(self, n: int = 1) -> List[NetworkReport]:
         """Retrieve the n most recent reports."""
         pass
+
+
+class NetworkFingerprintDetector(Protocol):
+    """Interface for network fingerprinting implementations."""
+    
+    def get_fingerprint(self) -> NetworkFingerprint:
+        """Get network fingerprint information."""
+        pass
