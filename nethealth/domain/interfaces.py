@@ -5,6 +5,26 @@ from datetime import datetime
 from typing import Dict, List, Optional, Protocol
 
 
+class NetHealthError(Exception):
+    """Base exception class for all NetHealth errors."""
+    pass
+
+
+class NetworkError(NetHealthError):
+    """Network-related errors."""
+    pass
+
+
+class ConfigurationError(NetHealthError):
+    """Configuration-related errors."""
+    pass
+
+
+class ServiceUnavailableError(NetHealthError):
+    """External service unavailability errors."""
+    pass
+
+
 @dataclass
 class NetworkSpeed:
     download_mbps: float

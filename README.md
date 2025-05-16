@@ -1,7 +1,47 @@
-### InitiAL plan
+# NetHealth
 
-i want to make a network checking script that when launched it starts with a welcome message identifying the logged in users username and using it for the message, then analyzing, identify if the user is using a vpn, tor or a custom tunnel or firewall. Then the  users network isp provider and details, region or country, it should then show the result. Then it should ask if the user wants to initiate a network speedtest. The network speedtest should be comprehensive that scans and tests for upload, download, jittter, ping, and frequency/wavelength of the internet, it's connection medium (wifi, ethermet,usb or bluetooth) and driver then provided the result in a well and beautifully looking structure in the terminal/or powershell window. then it should ask if the user wants to save the stats and prompt the user to provide a name, then a location for the file to be saved. 
+A comprehensive network analysis tool for monitoring and diagnosing network conditions.
 
-I want an explanation of how this can be done from the beginning o the end what programming language to use that is compatible with both terminal and powershell what libraries if any will be required.
+## Features
 
-Fix shortcomings my pitch has and improve it to be better , and overall if it's even possible or not
+- Network speed testing (download, upload, latency)
+- Network fingerprinting (IP, ISP, location)
+- VPN detection and analysis
+- Network interface monitoring
+- Historical data tracking
+- Plugin system for extensibility
+
+## Installation
+
+```bash
+pip install nethealth
+```
+
+## Quick Start
+
+```bash
+# Run a network analysis
+nethealth analyze
+
+# View historical data
+nethealth history
+
+# Run with specific plugins
+nethealth analyze --plugins security,performance
+```
+
+## Documentation
+
+Full documentation is available at [https://nethealth.readthedocs.io](https://nethealth.readthedocs.io)
+
+## Plugin Development
+
+NetHealth supports custom plugins for extending functionality. See the [Plugin Development Guide](docs/plugins.md) for details.
+
+## Contributing
+
+We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
+
+## License
+
+MIT License - see [LICENSE](LICENSE) for details.
