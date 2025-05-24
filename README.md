@@ -45,3 +45,34 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 ## License
 
 MIT License - see [LICENSE](LICENSE) for details.
+
+
+
+------------------------------------------------------------------------------------
+
+
+In the project main directory run
+
+#### Installation
+
+```bash
+
+
+pip install poetry
+
+poetry install
+
+poetry run nethealth analyze
+
+## Running the script
+
+
+poetry run nethealth analyze
+
+# View historical data
+
+poetry run nethealth history
+
+# Run with specific plugins
+
+nethealth analyze --plugins security,performance
